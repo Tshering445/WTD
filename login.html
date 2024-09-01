@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #ff9a8b, #ff6a00); /* Warm gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff; /* White text color for contrast */
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for form */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #333; /* Dark color for the heading */
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for the heading */
+            font-weight: 700; /* Bold weight for the heading */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600; /* Bold weight for labels */
+            color: #333; /* Dark color for labels */
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: none; /* Remove border from inputs */
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            background-color: #f2f2f2; /* Light gray background for inputs */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for input fields */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ff6a00, #ff9a8b); /* Gradient background */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            font-family: 'Roboto', sans-serif; /* Use Roboto font for buttons */
+            font-weight: 700; /* Bold weight for buttons */
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #ff9a8b, #ff6a00);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transform: translateY(-4px);
+        }
+
+        .link {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ff6a00;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-family: 'Open Sans', sans-serif; /* Use Open Sans font for links */
+        }
+
+        .link:hover {
+            color: #ff9a8b;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="2" class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p>Don't have account?<a href="css.html">signup</a></p>
+    </div>
+    <script>
+        // JavaScript for form submission or validation can be added here
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add your form submission logic here
+            alert('Login functionality is not implemented yet.');
+        });
+    </script>
+</body>
+</html>

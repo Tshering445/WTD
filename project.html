@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #000; /* Black text color */
+            text-align: center;
+        }
+        /* Body Styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #ff9a8b, #ff6a00); /* Warm gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff; /* White text color for contrast */
+        }
+
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Slightly opaque background for better contrast */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #000; /* Black text color */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ff4b1f, #ff9068); /* Gradient background */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #ff9068, #ff4b1f);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1>Welcome to Our System</h1>
+        <a href="css.html" class="btn">signup</a>
+        <a href="login.html" class="btn">login</a>
+    </div>
+</body>
+</html>

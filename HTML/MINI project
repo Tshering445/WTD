@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Stock and Financial System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mess Stock and Financial System</h1>
+    </header>
+
+    <main>
+        <section id="add-stock">
+            <h2>Add Stock</h2>
+            <form action="/add_stock" method="POST">
+                <label for="item_name">Item Name:</label>
+                <input type="text" id="item_name" name="item_name" required><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required><br>
+
+                <label for="unit_price">Unit Price:</label>
+                <input type="number" id="unit_price" name="unit_price" step="0.01" required><br>
+
+                <button type="submit">Add Stock</button>
+            </form>
+        </section>
+
+        <section id="transactions">
+            <h2>Financial Transactions</h2>
+            <form action="/add_transaction" method="POST">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" step="0.01" required><br>
+
+                <label for="type">Type:</label>
+                <select id="type" name="type" required>
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
+                </select><br>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea><br>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+
+        <section id="stock-list">
+            <h2>Stock List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Stock items will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mess Stock and Financial System</p>
+    </footer>
+</body>
+</html>
