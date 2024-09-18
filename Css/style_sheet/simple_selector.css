@@ -1,0 +1,12 @@
+* {
+    color:blue;
+    font-size: 50px;
+}
+
+p.center {
+    text-decoration: underline dashed purple;
+}
+
+h3,h5,p {
+    background-color: blue;
+}

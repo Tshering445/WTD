@@ -1,0 +1,16 @@
+selector:pseudo-class{
+    property: value;
+
+} 
+
+div:hover {
+    background-color: blue;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+p:first-child {
+    color: yellow;
+  }
