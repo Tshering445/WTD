@@ -1,0 +1,13 @@
+img {
+    float: right;
+}
+
+#div1 {
+    background-color: #df1212;
+    float: right;
+}
+
+#div2 {
+    background-color: yellow;
+    clear: right;
+}
