@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="/">
+            <fieldset>
+                <legend>form</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required><br><br>
+
+                <input type="submit" value="submit">
+            </fieldset>
+        </form>
+
+        <script>
+            function validateForm() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('Email').value;
+                var password = document.getElementById('password').value;
+
+                var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                var passwordPattern = /^(?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,}$/;
+
+                if (!emailPattern.test(email)) {
+                    alert('Please enter a valid email address.')
+                    return false;
+                }
+
+                if(!PasswordPattern.test(password)) {
+                    alert('Password must be at least 8 characters include upper letter , lower letter');
+                    return false;
+                }
+
+                return false;
+            }
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+.bg-warning {
+    background-color: #ac3985; /* Yellow background */
+}
+.bg-dark {
+    background-color: #040a0f; /* Dark background for the table */
+    text-align: center;
+}
+.text-light {
+    color: white; /* Light text color for readability */
+    text-align: center;
+}
+h2 {
+    color: #000305; /* Dark text color */
+    text-align: center;
+}
+button {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -7,19 +7,38 @@
     </head>
     <body>
         <form action="/" method="get" autocomplete="on">
-            <label for="fname">firstname:</label><br>
-            <input type="text" id="fname" name="firstname"><br>
-            <label for="lname">lastname:</label><br>
-            <input type="text" id="lname" name="lastname">
-            <br>
-            <label for="email">email</label><br>
-            <input type="text" id="email" name="user_email">
-            <br>
-            <label for="password">password</label><br>
-            <input type="text" id="password" name="password">
-            <br><br>
-            <input type="reset" value="reset">
-            <input type="submit" value="submit">
+            <fieldset>
+                <legend>form:</legend>
+                <label for="fname">firstname:</label><br>
+                <input type="text" id="fname" name="firstname">
+                <br><br>
+                <label for="lname">lastname:</label><br>
+                <input type="text" id="lname" name="lastname">
+                <br>
+                <label for="email">email</label><br>
+                <input type="text" id="email" name="user_email">
+                <br>
+                <label for="password">password</label><br>
+                <input type="text" id="password" name="password">
+                <br><br>
+                <input type="reset" value="reset"><br><br>
+                
+
+                <label for="car">car</label>
+                <select name="car" id="car">
+                    <option value="santro">santro</option>
+                    <option value="aulto">alto</option>
+                    <option value="bolaro">bolaro</option>
+                </select><br>
+
+                <input type="checkbox" name="male" value="male">
+                <label for="male">male</label><br>
+                <input type="radio" name="female" value="female">
+                <label for="female" name="female">female</label><br>
+                
+                </fieldset>
+                <input type="submit" value="submit"><br>
+            
         </form>
 
     </body>

@@ -1,0 +1,1 @@
+document.getElementsByClassName("p2").innerHTML="what is that"
